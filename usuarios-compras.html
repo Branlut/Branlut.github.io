@@ -1,249 +1,501 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>ee36181ce247473fabdf1a5c8c9e933e</title>
-  <style>
-    html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      overflow-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 1em;
-      }
-      h1 {
-        font-size: 1.8em;
-      }
-    }
-    @media print {
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
-      font-size: 85%;
-      margin: 0;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-      overflow-wrap: normal;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC ul {
-      padding-left: 1.3em;
-    }
-    #TOC > ul {
-      padding-left: 0;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { color: #008000; } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { color: #008000; font-weight: bold; } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
-  <!--[if lt IE 9]>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>ee36181ce247473fabdf1a5c8c9e933e</title>
+    <style>
+        html {
+            line-height: 1.5;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            color: #1a1a1a;
+            background-color: #fdfdfd;
+        }
+        
+        body {
+            margin: 0 auto;
+            max-width: 36em;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            hyphens: auto;
+            overflow-wrap: break-word;
+            text-rendering: optimizeLegibility;
+            font-kerning: normal;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                font-size: 0.9em;
+                padding: 1em;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+        
+        @media print {
+            body {
+                background-color: transparent;
+                color: black;
+                font-size: 12pt;
+            }
+            p,
+            h2,
+            h3 {
+                orphans: 3;
+                widows: 3;
+            }
+            h2,
+            h3,
+            h4 {
+                page-break-after: avoid;
+            }
+        }
+        
+        p {
+            margin: 1em 0;
+        }
+        
+        a {
+            color: #1a1a1a;
+        }
+        
+        a:visited {
+            color: #1a1a1a;
+        }
+        
+        img {
+            max-width: 100%;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 1.4em;
+        }
+        
+        h5,
+        h6 {
+            font-size: 1em;
+            font-style: italic;
+        }
+        
+        h6 {
+            font-weight: normal;
+        }
+        
+        ol,
+        ul {
+            padding-left: 1.7em;
+            margin-top: 1em;
+        }
+        
+        li>ol,
+        li>ul {
+            margin-top: 0;
+        }
+        
+        blockquote {
+            margin: 1em 0 1em 1.7em;
+            padding-left: 1em;
+            border-left: 2px solid #e6e6e6;
+            color: #606060;
+        }
+        
+        code {
+            font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+            font-size: 85%;
+            margin: 0;
+        }
+        
+        pre {
+            margin: 1em 0;
+            overflow: auto;
+        }
+        
+        pre code {
+            padding: 0;
+            overflow: visible;
+            overflow-wrap: normal;
+        }
+        
+        .sourceCode {
+            background-color: transparent;
+            overflow: visible;
+        }
+        
+        hr {
+            background-color: #1a1a1a;
+            border: none;
+            height: 1px;
+            margin: 1em 0;
+        }
+        
+        table {
+            margin: 1em 0;
+            border-collapse: collapse;
+            width: 100%;
+            overflow-x: auto;
+            display: block;
+            font-variant-numeric: lining-nums tabular-nums;
+        }
+        
+        table caption {
+            margin-bottom: 0.75em;
+        }
+        
+        tbody {
+            margin-top: 0.5em;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        
+        th {
+            border-top: 1px solid #1a1a1a;
+            padding: 0.25em 0.5em 0.25em 0.5em;
+        }
+        
+        td {
+            padding: 0.125em 0.5em 0.25em 0.5em;
+        }
+        
+        header {
+            margin-bottom: 4em;
+            text-align: center;
+        }
+        
+        #TOC li {
+            list-style: none;
+        }
+        
+        #TOC ul {
+            padding-left: 1.3em;
+        }
+        
+        #TOC>ul {
+            padding-left: 0;
+        }
+        
+        #TOC a:not(:hover) {
+            text-decoration: none;
+        }
+        
+        code {
+            white-space: pre-wrap;
+        }
+        
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+        
+        div.columns {
+            display: flex;
+            gap: min(4vw, 1.5em);
+        }
+        
+        div.column {
+            flex: auto;
+            overflow-x: auto;
+        }
+        
+        div.hanging-indent {
+            margin-left: 1.5em;
+            text-indent: -1.5em;
+        }
+        
+        ul.task-list {
+            list-style: none;
+        }
+        
+        ul.task-list li input[type="checkbox"] {
+            width: 0.8em;
+            margin: 0 0.8em 0.2em -1.6em;
+            vertical-align: middle;
+        }
+        
+        pre>code.sourceCode {
+            white-space: pre;
+            position: relative;
+        }
+        
+        pre>code.sourceCode>span {
+            display: inline-block;
+            line-height: 1.25;
+        }
+        
+        pre>code.sourceCode>span:empty {
+            height: 1.2em;
+        }
+        
+        .sourceCode {
+            overflow: visible;
+        }
+        
+        code.sourceCode>span {
+            color: inherit;
+            text-decoration: inherit;
+        }
+        
+        div.sourceCode {
+            margin: 1em 0;
+        }
+        
+        pre.sourceCode {
+            margin: 0;
+        }
+        
+        @media screen {
+            div.sourceCode {
+                overflow: auto;
+            }
+        }
+        
+        @media print {
+            pre>code.sourceCode {
+                white-space: pre-wrap;
+            }
+            pre>code.sourceCode>span {
+                text-indent: -5em;
+                padding-left: 5em;
+            }
+        }
+        
+        pre.numberSource code {
+            counter-reset: source-line 0;
+        }
+        
+        pre.numberSource code>span {
+            position: relative;
+            left: -4em;
+            counter-increment: source-line;
+        }
+        
+        pre.numberSource code>span>a:first-child::before {
+            content: counter(source-line);
+            position: relative;
+            left: -1em;
+            text-align: right;
+            vertical-align: baseline;
+            border: none;
+            display: inline-block;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            padding: 0 4px;
+            width: 4em;
+            color: #aaaaaa;
+        }
+        
+        pre.numberSource {
+            margin-left: 3em;
+            border-left: 1px solid #aaaaaa;
+            padding-left: 4px;
+        }
+        
+        div.sourceCode {}
+        
+        @media screen {
+            pre>code.sourceCode>span>a:first-child::before {
+                text-decoration: underline;
+            }
+        }
+        
+        code span.al {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        /* Alert */
+        
+        code span.an {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* Annotation */
+        
+        code span.at {
+            color: #7d9029;
+        }
+        /* Attribute */
+        
+        code span.bn {
+            color: #40a070;
+        }
+        /* BaseN */
+        
+        code span.bu {
+            color: #008000;
+        }
+        /* BuiltIn */
+        
+        code span.cf {
+            color: #007020;
+            font-weight: bold;
+        }
+        /* ControlFlow */
+        
+        code span.ch {
+            color: #4070a0;
+        }
+        /* Char */
+        
+        code span.cn {
+            color: #880000;
+        }
+        /* Constant */
+        
+        code span.co {
+            color: #60a0b0;
+            font-style: italic;
+        }
+        /* Comment */
+        
+        code span.cv {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* CommentVar */
+        
+        code span.do {
+            color: #ba2121;
+            font-style: italic;
+        }
+        /* Documentation */
+        
+        code span.dt {
+            color: #902000;
+        }
+        /* DataType */
+        
+        code span.dv {
+            color: #40a070;
+        }
+        /* DecVal */
+        
+        code span.er {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        /* Error */
+        
+        code span.ex {}
+        /* Extension */
+        
+        code span.fl {
+            color: #40a070;
+        }
+        /* Float */
+        
+        code span.fu {
+            color: #06287e;
+        }
+        /* Function */
+        
+        code span.im {
+            color: #008000;
+            font-weight: bold;
+        }
+        /* Import */
+        
+        code span.in {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* Information */
+        
+        code span.kw {
+            color: #007020;
+            font-weight: bold;
+        }
+        /* Keyword */
+        
+        code span.op {
+            color: #666666;
+        }
+        /* Operator */
+        
+        code span.ot {
+            color: #007020;
+        }
+        /* Other */
+        
+        code span.pp {
+            color: #bc7a00;
+        }
+        /* Preprocessor */
+        
+        code span.sc {
+            color: #4070a0;
+        }
+        /* SpecialChar */
+        
+        code span.ss {
+            color: #bb6688;
+        }
+        /* SpecialString */
+        
+        code span.st {
+            color: #4070a0;
+        }
+        /* String */
+        
+        code span.va {
+            color: #19177c;
+        }
+        /* Variable */
+        
+        code span.vs {
+            color: #4070a0;
+        }
+        /* VerbatimString */
+        
+        code span.wa {
+            color: #60a0b0;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* Warning */
+        
+        .display.math {
+            display: block;
+            text-align: center;
+            margin: 0.5rem auto;
+        }
+    </style>
+    <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
+
 <body>
-<section id="objetivo" class="cell markdown">
-<h1>Objetivo</h1>
-<p>La empresa de productos alimenticios en la cual trabajamos nos pidio
-realizar una investigacion del comportamiento de los usuarios para ello
-realizaremos</p>
-<p>-Preparar los datos</p>
-<p>-Realizar analisis exploratorio</p>
-<p>-Estudio del embudo de ventas</p>
-<p>-Una prueba A/A/B (el cual consiste en 2 grupos de controlo y 1 de
-prueba)</p>
-</section>
-<section id="1-abrir-archivo" class="cell markdown">
-<h2>1 Abrir archivo</h2>
-</section>
-<div class="cell code" data-execution_count="1">
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
+    <section id="objetivo" class="cell markdown">
+        <h1>Objetivo</h1>
+        <p>La empresa de productos alimenticios en la cual trabajamos nos pidio realizar una investigacion del comportamiento de los usuarios para ello realizaremos
+        </p>
+        <p>-Preparar los datos</p>
+        <p>-Realizar analisis exploratorio</p>
+        <p>-Estudio del embudo de ventas</p>
+        <p>-Una prueba A/A/B (el cual consiste en 2 grupos de controlo y 1 de prueba)
+        </p>
+    </section>
+    <section id="1-abrir-archivo" class="cell markdown">
+        <h2>1 Abrir archivo</h2>
+    </section>
+    <div class="cell code" data-execution_count="1">
+        <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> datetime <span class="im">as</span> dt</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math <span class="im">as</span> mth</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -251,16 +503,14 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy <span class="im">import</span> stats <span class="im">as</span> st</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div>
-</div>
-<div class="cell code" data-execution_count="2">
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_data <span class="op">=</span> pd.read_csv(<span class="st">&#39;/datasets/logs_exp_us.csv&#39;</span>, sep<span class="op">=</span><span class="st">&#39;</span><span class="ch">\t</span><span class="st">&#39;</span>)</span></code></pre></div>
-</div>
-<div class="cell code" data-execution_count="3">
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                      EventName         DeviceIDHash  EventTimestamp  ExpId
+    </div>
+    <div class="cell code" data-execution_count="2">
+        <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df_data <span class="op">=</span> pd.read_csv(<span class="st">&#39;/datasets/logs_exp_us.csv&#39;</span>, sep<span class="op">=</span><span class="st">&#39;</span><span class="ch">\t</span><span class="st">&#39;</span>)</span></code></pre></div>
+    </div>
+    <div class="cell code" data-execution_count="3">
+        <div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data)</span></code></pre></div>
+        <div class="output stream stdout">
+            <pre><code>                      EventName         DeviceIDHash  EventTimestamp  ExpId
 0              MainScreenAppear  4575588528974610257      1564029816    246
 1              MainScreenAppear  7416695313311560658      1564053102    246
 2       PaymentScreenSuccessful  3518123091307005509      1564054127    248
@@ -275,20 +525,18 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a hr
 
 [244126 rows x 4 columns]
 </code></pre>
-</div>
-</div>
-<section id="2-preparar-datos-apara-analisis" class="cell markdown">
-<h2>2 Preparar datos apara analisis</h2>
-</section>
-<div class="cell code" data-execution_count="4">
-<div class="sourceCode" id="cb5"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_data.columns <span class="op">=</span> [<span class="st">&#39;event&#39;</span>,<span class="st">&#39;device&#39;</span>,<span class="st">&#39;time&#39;</span>,<span class="st">&#39;expid&#39;</span>]</span></code></pre></div>
-</div>
-<div class="cell code" data-execution_count="5">
-<div class="sourceCode" id="cb6"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                          event               device        time  expid
+        </div>
+    </div>
+    <section id="2-preparar-datos-apara-analisis" class="cell markdown">
+        <h2>2 Preparar datos apara analisis</h2>
+    </section>
+    <div class="cell code" data-execution_count="4">
+        <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_data.columns <span class="op">=</span> [<span class="st">&#39;event&#39;</span>,<span class="st">&#39;device&#39;</span>,<span class="st">&#39;time&#39;</span>,<span class="st">&#39;expid&#39;</span>]</span></code></pre></div>
+    </div>
+    <div class="cell code" data-execution_count="5">
+        <div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data)</span></code></pre></div>
+        <div class="output stream stdout">
+            <pre><code>                          event               device        time  expid
 0              MainScreenAppear  4575588528974610257  1564029816    246
 1              MainScreenAppear  7416695313311560658  1564053102    246
 2       PaymentScreenSuccessful  3518123091307005509  1564054127    248
@@ -303,13 +551,12 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a hr
 
 [244126 rows x 4 columns]
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="6">
-<div class="sourceCode" id="cb8"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_data.info()</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="6">
+        <div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_data.info()</span></code></pre></div>
+        <div class="output stream stdout">
+            <pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 RangeIndex: 244126 entries, 0 to 244125
 Data columns (total 4 columns):
  #   Column  Non-Null Count   Dtype 
@@ -321,47 +568,42 @@ Data columns (total 4 columns):
 dtypes: int64(3), object(1)
 memory usage: 7.5+ MB
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="7">
-<div class="sourceCode" id="cb10"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data.isna().<span class="bu">sum</span>())</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>event     0
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="7">
+        <div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data.isna().<span class="bu">sum</span>())</span></code></pre></div>
+        <div class="output stream stdout">
+            <pre><code>event     0
 device    0
 time      0
 expid     0
 dtype: int64
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="8">
-<div class="sourceCode" id="cb12"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data.duplicated().<span class="bu">sum</span>())</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>413
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="8">
+        <div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data.duplicated().<span class="bu">sum</span>())</span></code></pre></div>
+        <div class="output stream stdout">
+            <pre><code>413
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="9">
-<div class="sourceCode" id="cb14"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df_data.drop_duplicates(inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
-</div>
-<div class="cell code" data-execution_count="10">
-<div class="sourceCode" id="cb15"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data.duplicated().<span class="bu">sum</span>())</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="9">
+        <div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df_data.drop_duplicates(inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
+    </div>
+    <div class="cell code" data-execution_count="10">
+        <div class="sourceCode" id="cb15"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data.duplicated().<span class="bu">sum</span>())</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>df_data.reset_index(drop<span class="op">=</span><span class="va">True</span> ,inplace<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>0
+        <div class="output stream stdout">
+            <pre><code>0
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="11">
-<div class="sourceCode" id="cb17"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                          event               device        time  expid
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="11">
+        <div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data)</span></code></pre></div>
+        <div class="output stream stdout">
+            <pre><code>                          event               device        time  expid
 0              MainScreenAppear  4575588528974610257  1564029816    246
 1              MainScreenAppear  7416695313311560658  1564053102    246
 2       PaymentScreenSuccessful  3518123091307005509  1564054127    248
@@ -376,18 +618,16 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a h
 
 [243713 rows x 4 columns]
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="12">
-<div class="sourceCode" id="cb19"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df_data[<span class="st">&#39;datetime&#39;</span>] <span class="op">=</span> pd.to_datetime(df_data[<span class="st">&#39;time&#39;</span>], unit<span class="op">=</span><span class="st">&#39;s&#39;</span>)</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="12">
+        <div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df_data[<span class="st">&#39;datetime&#39;</span>] <span class="op">=</span> pd.to_datetime(df_data[<span class="st">&#39;time&#39;</span>], unit<span class="op">=</span><span class="st">&#39;s&#39;</span>)</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>df_data[<span class="st">&#39;date&#39;</span>] <span class="op">=</span> pd.to_datetime(df_data[<span class="st">&#39;datetime&#39;</span>].dt.date)</span></code></pre></div>
-</div>
-<div class="cell code" data-execution_count="13">
-<div class="sourceCode" id="cb20"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                          event               device        time  expid  \
+    </div>
+    <div class="cell code" data-execution_count="13">
+        <div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data)</span></code></pre></div>
+        <div class="output stream stdout">
+            <pre><code>                          event               device        time  expid  \
 0              MainScreenAppear  4575588528974610257  1564029816    246   
 1              MainScreenAppear  7416695313311560658  1564053102    246   
 2       PaymentScreenSuccessful  3518123091307005509  1564054127    248   
@@ -415,31 +655,27 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a h
 
 [243713 rows x 6 columns]
 </code></pre>
-</div>
-</div>
-<div class="cell markdown">
-<p>-El dataframe df_data cuenta con 4 columnas inicialmente y 244126
-registros</p>
-<p>-Las 4 columnas son non-nul y cuentan con la totalidad e los
-registros</p>
-<p>-Los tipos de datos son correctos solo conciderar que la columna time
-esta con un formato de timestamp el cual se tiene que transformar a date
-para un mejor analisis lo cual se realizo</p>
-<p>-Se encontraron 413 registros totalmente duplicados por se procedio a
-eliminarlos</p>
-<p>-Se agrego como se comento una columna correspondiendo a la fecha y
-hora del evento y la fecha solamente en base a la columna time</p>
-</div>
-<section id="estudiar-y-comprobar-datos" class="cell markdown">
-<h2>Estudiar y comprobar datos</h2>
-</section>
-<div class="cell code" data-execution_count="14">
-<div class="sourceCode" id="cb22"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a></span>
+        </div>
+    </div>
+    <div class="cell markdown">
+        <p>-El dataframe df_data cuenta con 4 columnas inicialmente y 244126 registros
+        </p>
+        <p>-Las 4 columnas son non-nul y cuentan con la totalidad e los registros
+        </p>
+        <p>-Los tipos de datos son correctos solo conciderar que la columna time esta con un formato de timestamp el cual se tiene que transformar a date para un mejor analisis lo cual se realizo</p>
+        <p>-Se encontraron 413 registros totalmente duplicados por se procedio a eliminarlos
+        </p>
+        <p>-Se agrego como se comento una columna correspondiendo a la fecha y hora del evento y la fecha solamente en base a la columna time</p>
+    </div>
+    <section id="estudiar-y-comprobar-datos" class="cell markdown">
+        <h2>Estudiar y comprobar datos</h2>
+    </section>
+    <div class="cell code" data-execution_count="14">
+        <div class="sourceCode" id="cb22"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>event_count <span class="op">=</span> df_data.groupby(<span class="st">&#39;event&#39;</span>).agg({<span class="st">&#39;device&#39;</span>: <span class="st">&#39;count&#39;</span>}).rename(columns<span class="op">=</span>{<span class="st">&#39;device&#39;</span>:<span class="st">&#39;eventcount&#39;</span>})</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(event_count)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                         eventcount
+        <div class="output stream stdout">
+            <pre><code>                         eventcount
 event                              
 CartScreenAppear              42668
 MainScreenAppear             119101
@@ -447,14 +683,13 @@ OffersScreenAppear            46808
 PaymentScreenSuccessful       34118
 Tutorial                       1018
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="15" data-scrolled="false">
-<div class="sourceCode" id="cb24"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>user_count <span class="op">=</span> df_data.groupby(<span class="st">&#39;event&#39;</span>).agg({<span class="st">&#39;device&#39;</span>:<span class="st">&#39;nunique&#39;</span>}).rename(columns<span class="op">=</span>{<span class="st">&#39;device&#39;</span>:<span class="st">&#39;usercount&#39;</span>})</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="15" data-scrolled="false">
+        <div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>user_count <span class="op">=</span> df_data.groupby(<span class="st">&#39;event&#39;</span>).agg({<span class="st">&#39;device&#39;</span>:<span class="st">&#39;nunique&#39;</span>}).rename(columns<span class="op">=</span>{<span class="st">&#39;device&#39;</span>:<span class="st">&#39;usercount&#39;</span>})</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(user_count)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                         usercount
+        <div class="output stream stdout">
+            <pre><code>                         usercount
 event                             
 CartScreenAppear              3749
 MainScreenAppear              7439
@@ -462,15 +697,14 @@ OffersScreenAppear            4613
 PaymentScreenSuccessful       3547
 Tutorial                       847
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="16">
-<div class="sourceCode" id="cb26"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>average_event_user <span class="op">=</span> event_count.merge(user_count, on<span class="op">=</span><span class="st">&#39;event&#39;</span>)</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="16">
+        <div class="sourceCode" id="cb26"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>average_event_user <span class="op">=</span> event_count.merge(user_count, on<span class="op">=</span><span class="st">&#39;event&#39;</span>)</span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>average_event_user[<span class="st">&#39;average&#39;</span>] <span class="op">=</span> average_event_user[<span class="st">&#39;eventcount&#39;</span>]<span class="op">/</span>average_event_user[<span class="st">&#39;usercount&#39;</span>]</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(average_event_user)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                         eventcount  usercount    average
+        <div class="output stream stdout">
+            <pre><code>                         eventcount  usercount    average
 event                                                    
 CartScreenAppear              42668       3749  11.381168
 MainScreenAppear             119101       7439  16.010351
@@ -478,52 +712,42 @@ OffersScreenAppear            46808       4613  10.146976
 PaymentScreenSuccessful       34118       3547   9.618833
 Tutorial                       1018        847   1.201889
 </code></pre>
-</div>
-</div>
-<div class="cell markdown">
-<p>-event_count cuenta la cantidad de eventos que se realizaron</p>
-<p>-user_count cuenta la cantidad e usuarios unicos que realizaron un
-evento</p>
-<p>-average_event_user es un merge entre event_count y user_count en la
-cual se agrego el promedio (event_count/user_count)</p>
-<p>-En promedio hay 11 personas que visitan CartScreenAppear , 16 que
-visitan MainScreenAppear, 10 que visitan OffersScreenAppear, 10 que
-visitan PaymentScreenSuccessful y 1 que visitan Tutorial</p>
-<p>-Con respecto a los promedios la mayoria es obviamente los de la la
-pagina principal ya que este es el punto de contacto, disminuye con
-respecto a ver las ofertas, el carro, el pago como tal y practicamente
-nadie ve el tutorial</p>
-</div>
-<div class="cell code" data-execution_count="17">
-<div class="sourceCode" id="cb28"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data[<span class="st">&#39;date&#39;</span>].<span class="bu">min</span>())</span>
+        </div>
+    </div>
+    <div class="cell markdown">
+        <p>-event_count cuenta la cantidad de eventos que se realizaron</p>
+        <p>-user_count cuenta la cantidad e usuarios unicos que realizaron un evento
+        </p>
+        <p>-average_event_user es un merge entre event_count y user_count en la cual se agrego el promedio (event_count/user_count)</p>
+        <p>-En promedio hay 11 personas que visitan CartScreenAppear , 16 que visitan MainScreenAppear, 10 que visitan OffersScreenAppear, 10 que visitan PaymentScreenSuccessful y 1 que visitan Tutorial</p>
+        <p>-Con respecto a los promedios la mayoria es obviamente los de la la pagina principal ya que este es el punto de contacto, disminuye con respecto a ver las ofertas, el carro, el pago como tal y practicamente nadie ve el tutorial</p>
+    </div>
+    <div class="cell code" data-execution_count="17">
+        <div class="sourceCode" id="cb28"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data[<span class="st">&#39;date&#39;</span>].<span class="bu">min</span>())</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data[<span class="st">&#39;date&#39;</span>].<span class="bu">max</span>())</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_data[<span class="st">&#39;date&#39;</span>].<span class="bu">max</span>() <span class="op">-</span>df_data[<span class="st">&#39;date&#39;</span>].<span class="bu">min</span>() )</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>2019-07-25 00:00:00
+        <div class="output stream stdout">
+            <pre><code>2019-07-25 00:00:00
 2019-08-07 00:00:00
 13 days 00:00:00
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="18">
-<div class="sourceCode" id="cb30"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>))</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="18">
+        <div class="sourceCode" id="cb30"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>,<span class="dv">5</span>))</span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>df_data[<span class="st">&#39;datetime&#39;</span>].hist()</span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>)</span>
 <span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
-<div class="output display_data">
-<p><img
-src="vertopal_06843fb49f47493a875cd734216249a0/8f24445ce152ed1604ef79feeba06a453d2e15df.png" /></p>
-</div>
-</div>
-<div class="cell code" data-execution_count="19">
-<div class="sourceCode" id="cb31"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df_new_data <span class="op">=</span> df_data[df_data[<span class="st">&#39;datetime&#39;</span>] <span class="op">&gt;=</span> <span class="st">&#39;2019-08-01&#39;</span>]</span>
+        <div class="output display_data">
+            <p><img src="vertopal_06843fb49f47493a875cd734216249a0/8f24445ce152ed1604ef79feeba06a453d2e15df.png" /></p>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="19">
+        <div class="sourceCode" id="cb31"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df_new_data <span class="op">=</span> df_data[df_data[<span class="st">&#39;datetime&#39;</span>] <span class="op">&gt;=</span> <span class="st">&#39;2019-08-01&#39;</span>]</span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_new_data)</span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_new_data[<span class="st">&#39;expid&#39;</span>].value_counts())</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                     event               device        time  expid  \
+        <div class="output stream stdout">
+            <pre><code>                     event               device        time  expid  \
 2826              Tutorial  3737462046622621720  1564618048    246   
 2827      MainScreenAppear  3737462046622621720  1564618080    246   
 2828      MainScreenAppear  3737462046622621720  1564618135    246   
@@ -555,29 +779,23 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb31-1"><a h
 247    77022
 Name: expid, dtype: int64
 </code></pre>
-</div>
-</div>
-<div class="cell markdown">
-<p>-El periodo de prueba es bastante corto des finales de Julia hasta
-los primeros dias de Agosto alrededor de 13 dias</p>
-<p>-Comprobando la frecuencia de las fechas solo se tienen datos
-significativos a partir del 1 de Agosto del 2019</p>
-<p>-Teniendo en cuenta lo anterior se filtro a partir de esta fecha para
-que sean mas relavante el analisis</p>
-<p>-Se verifico que el nuevo dataframe cuenta con 240887 en comparacion
-al viejo con 243713 por lo cual solo se descartaron 2826 registros</p>
-<p>-Se verifico que estuvieran los 3 tipos de usuarios para realizar el
-analisis A/A/B</p>
-</div>
-<section id="4-estudiar-embudo-de-eventos" class="cell markdown">
-<h2>4 Estudiar embudo de eventos</h2>
-</section>
-<div class="cell code" data-execution_count="20">
-<div class="sourceCode" id="cb33"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>new_event_count <span class="op">=</span> df_new_data.groupby(<span class="st">&#39;event&#39;</span>).agg({<span class="st">&#39;device&#39;</span>:<span class="st">&#39;count&#39;</span>}).rename(columns<span class="op">=</span>{<span class="st">&#39;device&#39;</span>:<span class="st">&#39;eventcount&#39;</span>})</span>
+        </div>
+    </div>
+    <div class="cell markdown">
+        <p>-El periodo de prueba es bastante corto des finales de Julia hasta los primeros dias de Agosto alrededor de 13 dias</p>
+        <p>-Comprobando la frecuencia de las fechas solo se tienen datos significativos a partir del 1 de Agosto del 2019</p>
+        <p>-Teniendo en cuenta lo anterior se filtro a partir de esta fecha para que sean mas relavante el analisis</p>
+        <p>-Se verifico que el nuevo dataframe cuenta con 240887 en comparacion al viejo con 243713 por lo cual solo se descartaron 2826 registros</p>
+        <p>-Se verifico que estuvieran los 3 tipos de usuarios para realizar el analisis A/A/B</p>
+    </div>
+    <section id="4-estudiar-embudo-de-eventos" class="cell markdown">
+        <h2>4 Estudiar embudo de eventos</h2>
+    </section>
+    <div class="cell code" data-execution_count="20">
+        <div class="sourceCode" id="cb33"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>new_event_count <span class="op">=</span> df_new_data.groupby(<span class="st">&#39;event&#39;</span>).agg({<span class="st">&#39;device&#39;</span>:<span class="st">&#39;count&#39;</span>}).rename(columns<span class="op">=</span>{<span class="st">&#39;device&#39;</span>:<span class="st">&#39;eventcount&#39;</span>})</span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(new_event_count.sort_values(by<span class="op">=</span><span class="st">&#39;eventcount&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>))</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                         eventcount
+        <div class="output stream stdout">
+            <pre><code>                         eventcount
 event                              
 MainScreenAppear             117328
 OffersScreenAppear            46333
@@ -585,14 +803,13 @@ CartScreenAppear              42303
 PaymentScreenSuccessful       33918
 Tutorial                       1005
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="21">
-<div class="sourceCode" id="cb35"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>new_user_count <span class="op">=</span> df_new_data.groupby(<span class="st">&#39;event&#39;</span>).agg({<span class="st">&#39;device&#39;</span>:<span class="st">&#39;nunique&#39;</span>}).rename(columns<span class="op">=</span>{<span class="st">&#39;device&#39;</span>:<span class="st">&#39;usercount&#39;</span>})</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="21">
+        <div class="sourceCode" id="cb35"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>new_user_count <span class="op">=</span> df_new_data.groupby(<span class="st">&#39;event&#39;</span>).agg({<span class="st">&#39;device&#39;</span>:<span class="st">&#39;nunique&#39;</span>}).rename(columns<span class="op">=</span>{<span class="st">&#39;device&#39;</span>:<span class="st">&#39;usercount&#39;</span>})</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(new_user_count.sort_values(by<span class="op">=</span><span class="st">&#39;usercount&#39;</span>,ascending<span class="op">=</span><span class="va">False</span>))</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                         usercount
+        <div class="output stream stdout">
+            <pre><code>                         usercount
 event                             
 MainScreenAppear              7419
 OffersScreenAppear            4593
@@ -600,15 +817,14 @@ CartScreenAppear              3734
 PaymentScreenSuccessful       3539
 Tutorial                       840
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="22">
-<div class="sourceCode" id="cb37"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>merge_count <span class="op">=</span> new_event_count.merge(new_user_count,on<span class="op">=</span><span class="st">&#39;event&#39;</span>)</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="22">
+        <div class="sourceCode" id="cb37"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>merge_count <span class="op">=</span> new_event_count.merge(new_user_count,on<span class="op">=</span><span class="st">&#39;event&#39;</span>)</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>merge_count[<span class="st">&#39;average&#39;</span>] <span class="op">=</span> merge_count[<span class="st">&#39;eventcount&#39;</span>]<span class="op">/</span>merge_count[<span class="st">&#39;usercount&#39;</span>]</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(merge_count)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                         eventcount  usercount    average
+        <div class="output stream stdout">
+            <pre><code>                         eventcount  usercount    average
 event                                                    
 CartScreenAppear              42303       3734  11.329138
 MainScreenAppear             117328       7419  15.814530
@@ -616,14 +832,13 @@ OffersScreenAppear            46333       4593  10.087742
 PaymentScreenSuccessful       33918       3539   9.584063
 Tutorial                       1005        840   1.196429
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="23">
-<div class="sourceCode" id="cb39"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>user_proportion <span class="op">=</span> df_new_data.pivot_table(index<span class="op">=</span><span class="st">&#39;device&#39;</span>,columns<span class="op">=</span><span class="st">&#39;event&#39;</span>,values<span class="op">=</span><span class="st">&#39;datetime&#39;</span>,aggfunc<span class="op">=</span><span class="st">&#39;min&#39;</span>)</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="23">
+        <div class="sourceCode" id="cb39"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>user_proportion <span class="op">=</span> df_new_data.pivot_table(index<span class="op">=</span><span class="st">&#39;device&#39;</span>,columns<span class="op">=</span><span class="st">&#39;event&#39;</span>,values<span class="op">=</span><span class="st">&#39;datetime&#39;</span>,aggfunc<span class="op">=</span><span class="st">&#39;min&#39;</span>)</span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(new_user_count)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>                         usercount
+        <div class="output stream stdout">
+            <pre><code>                         usercount
 event                             
 CartScreenAppear              3734
 MainScreenAppear              7419
@@ -631,32 +846,28 @@ OffersScreenAppear            4593
 PaymentScreenSuccessful       3539
 Tutorial                       840
 </code></pre>
-</div>
-</div>
-<div class="cell markdown">
-<p>El orden de los eventos puede ser de la siguiente forma</p>
-<p>1-MainScreenAppear (Pagina inicial de la tienda)</p>
-<p>2-Tutorial (guia de como realizar el flujo de eventos hasta realizar
-una compra en teoria deberia verse luego de ingresar a la pagina)</p>
-<p>3-OffersScreenAppear (Seccion de ofertas)</p>
-<p>4-CartScreenAppear (Productos que estan en el carrito)</p>
-<p>5-PaymentScreenSuccessful (realizar la compra de los productos del
-carrito)</p>
-<p>Pero el evento del tutorial no influye en absoluto en el flujo normal
-ya que no es necesario verlo para poder realizar una compra.</p>
-</div>
-<div class="cell code" data-execution_count="24">
-<div class="sourceCode" id="cb41"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>n_main_screen <span class="op">=</span> user_proportion[<span class="op">~</span>user_proportion[<span class="st">&#39;MainScreenAppear&#39;</span>].isna()].shape[<span class="dv">0</span>]</span>
+        </div>
+    </div>
+    <div class="cell markdown">
+        <p>El orden de los eventos puede ser de la siguiente forma</p>
+        <p>1-MainScreenAppear (Pagina inicial de la tienda)</p>
+        <p>2-Tutorial (guia de como realizar el flujo de eventos hasta realizar una compra en teoria deberia verse luego de ingresar a la pagina)</p>
+        <p>3-OffersScreenAppear (Seccion de ofertas)</p>
+        <p>4-CartScreenAppear (Productos que estan en el carrito)</p>
+        <p>5-PaymentScreenSuccessful (realizar la compra de los productos del carrito)
+        </p>
+        <p>Pero el evento del tutorial no influye en absoluto en el flujo normal ya que no es necesario verlo para poder realizar una compra.</p>
+    </div>
+    <div class="cell code" data-execution_count="24">
+        <div class="sourceCode" id="cb41"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>n_main_screen <span class="op">=</span> user_proportion[<span class="op">~</span>user_proportion[<span class="st">&#39;MainScreenAppear&#39;</span>].isna()].shape[<span class="dv">0</span>]</span>
 <span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Numero de visitas&#39;</span>,n_main_screen)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>Numero de visitas 7419
+        <div class="output stream stdout">
+            <pre><code>Numero de visitas 7419
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="25">
-<div class="sourceCode" id="cb43"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>paso_1 <span class="op">=</span> <span class="op">~</span>user_proportion[<span class="st">&#39;MainScreenAppear&#39;</span>].isna()</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="25">
+        <div class="sourceCode" id="cb43"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>paso_1 <span class="op">=</span> <span class="op">~</span>user_proportion[<span class="st">&#39;MainScreenAppear&#39;</span>].isna()</span>
 <span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>paso_2 <span class="op">=</span> paso_1 <span class="op">&amp;</span> (user_proportion[<span class="st">&#39;Tutorial&#39;</span>] <span class="op">&gt;</span> user_proportion[<span class="st">&#39;MainScreenAppear&#39;</span>])</span>
 <span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>paso_3 <span class="op">=</span> paso_2 <span class="op">&amp;</span>(user_proportion[<span class="st">&#39;OffersScreenAppear&#39;</span>] <span class="op">&gt;</span> user_proportion[<span class="st">&#39;Tutorial&#39;</span>])</span>
 <span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>paso_4 <span class="op">=</span> paso_3 <span class="op">&amp;</span> (user_proportion[<span class="st">&#39;CartScreenAppear&#39;</span>]<span class="op">&gt;</span>user_proportion[<span class="st">&#39;OffersScreenAppear&#39;</span>])</span>
@@ -673,18 +884,17 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb43-1"><a h
 <span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Ofertas vistas&#39;</span>,n_offers)</span>
 <span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Productos al carrito&#39;</span>,n_cart)</span>
 <span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Pago exitoso&#39;</span>,n_payment)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>Numero de visitas 7419
+        <div class="output stream stdout">
+            <pre><code>Numero de visitas 7419
 tutorial visto 46
 Ofertas vistas 7
 Productos al carrito 4
 Pago exitoso 2
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="26">
-<div class="sourceCode" id="cb45"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>paso_1 <span class="op">=</span> <span class="op">~</span>user_proportion[<span class="st">&#39;MainScreenAppear&#39;</span>].isna()</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="26">
+        <div class="sourceCode" id="cb45"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>paso_1 <span class="op">=</span> <span class="op">~</span>user_proportion[<span class="st">&#39;MainScreenAppear&#39;</span>].isna()</span>
 <span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>paso_2 <span class="op">=</span> paso_1 <span class="op">&amp;</span> (user_proportion[<span class="st">&#39;OffersScreenAppear&#39;</span>] <span class="op">&gt;</span> user_proportion[<span class="st">&#39;MainScreenAppear&#39;</span>])</span>
 <span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>paso_3 <span class="op">=</span> paso_2 <span class="op">&amp;</span>(user_proportion[<span class="st">&#39;CartScreenAppear&#39;</span>] <span class="op">&gt;</span> user_proportion[<span class="st">&#39;OffersScreenAppear&#39;</span>])</span>
 <span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>paso_4 <span class="op">=</span> paso_3 <span class="op">&amp;</span> (user_proportion[<span class="st">&#39;PaymentScreenSuccessful&#39;</span>]<span class="op">&gt;</span>user_proportion[<span class="st">&#39;CartScreenAppear&#39;</span>])</span>
@@ -701,45 +911,36 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb45-1"><a h
 <span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Productos al carrito&#39;</span>,n_cart_new, (n_cart_new <span class="op">*</span> <span class="dv">100</span>)<span class="op">/</span>n_main_new)</span>
 <span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;Pago exitoso&#39;</span>,n_payment, (n_payment <span class="op">*</span> <span class="dv">100</span>)<span class="op">/</span>n_main_new)</span>
 <span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;tutorial visto&#39;</span>,n_tutorial_new, (n_tutorial_new <span class="op">*</span> <span class="dv">100</span>)<span class="op">/</span>n_main_new)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>Numero de visitas 7419
+        <div class="output stream stdout">
+            <pre><code>Numero de visitas 7419
 Ofertas vistas 4201 56.62488205957676
 Productos al carrito 1767 23.81722604124545
 Pago exitoso 2 0.02695781102574471
 tutorial visto 1 0.013478905512872355
 </code></pre>
-</div>
-</div>
-<div class="cell markdown">
-<p>-En cuanto al promedio con los datos filtrado se puede ver que no
-tuvo un cambio significativo</p>
-<p>-en los 2 ordenes de eventos mostrados se ve que solo el 2.6% de las
-persona completo todos los eventos</p>
-<p>-en el cual nos centraremos es en el orden
-(main,offer,cart,payment,tutorial) ya que el tutorial puede ser un
-evento mas bien totalmente opcional con esto me refiero a que el en el
-flujo no afecta</p>
-<p>-a medida que avanza el flujo de los eventos se ve una disminucion de
-personas siendo las que completan una compra muy pocas</p>
-</div>
-<section id="estudiar-los-resultados-del-experimento"
-class="cell markdown">
-<h2>Estudiar los resultados del experimento</h2>
-</section>
-<div class="cell code" data-execution_count="27">
-<div class="sourceCode" id="cb47"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_new_data[<span class="st">&#39;expid&#39;</span>].value_counts())</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>248    84563
+        </div>
+    </div>
+    <div class="cell markdown">
+        <p>-En cuanto al promedio con los datos filtrado se puede ver que no tuvo un cambio significativo</p>
+        <p>-en los 2 ordenes de eventos mostrados se ve que solo el 2.6% de las persona completo todos los eventos</p>
+        <p>-en el cual nos centraremos es en el orden (main,offer,cart,payment,tutorial) ya que el tutorial puede ser un evento mas bien totalmente opcional con esto me refiero a que el en el flujo no afecta</p>
+        <p>-a medida que avanza el flujo de los eventos se ve una disminucion de personas siendo las que completan una compra muy pocas</p>
+    </div>
+    <section id="estudiar-los-resultados-del-experimento" class="cell markdown">
+        <h2>Estudiar los resultados del experimento</h2>
+    </section>
+    <div class="cell code" data-execution_count="27">
+        <div class="sourceCode" id="cb47"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_new_data[<span class="st">&#39;expid&#39;</span>].value_counts())</span></code></pre></div>
+        <div class="output stream stdout">
+            <pre><code>248    84563
 246    79302
 247    77022
 Name: expid, dtype: int64
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="42">
-<div class="sourceCode" id="cb49"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>muestra_246 <span class="op">=</span>df_new_data[df_new_data[<span class="st">&#39;expid&#39;</span>]<span class="op">==</span><span class="dv">246</span>]</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="42">
+        <div class="sourceCode" id="cb49"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>muestra_246 <span class="op">=</span>df_new_data[df_new_data[<span class="st">&#39;expid&#39;</span>]<span class="op">==</span><span class="dv">246</span>]</span>
 <span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>muestra_247 <span class="op">=</span>df_new_data[df_new_data[<span class="st">&#39;expid&#39;</span>]<span class="op">==</span><span class="dv">247</span>]</span>
 <span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a>id_246 <span class="op">=</span> df_new_data[df_new_data[<span class="st">&#39;expid&#39;</span>]<span class="op">==</span><span class="dv">246</span>][<span class="st">&#39;event&#39;</span>].value_counts()</span>
@@ -751,8 +952,8 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb49-1"><a h
 <span id="cb49-10"><a href="#cb49-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb49-11"><a href="#cb49-11" aria-hidden="true" tabindex="-1"></a>prueba <span class="op">=</span> muestra_247[<span class="st">&#39;device&#39;</span>].nunique()</span>
 <span id="cb49-12"><a href="#cb49-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(prueba)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>MainScreenAppear           37676
+        <div class="output stream stdout">
+            <pre><code>MainScreenAppear           37676
 OffersScreenAppear         14767
 CartScreenAppear           14690
 PaymentScreenSuccessful    11852
@@ -766,22 +967,20 @@ Tutorial                     338
 Name: event, dtype: int64
 2513
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="29">
-<div class="sourceCode" id="cb51"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co">#diferencia estadistica entre los grupos de control</span></span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="29">
+        <div class="sourceCode" id="cb51"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="co">#diferencia estadistica entre los grupos de control</span></span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>resultAA <span class="op">=</span> st.ttest_ind(id_246,id_247)</span>
 <span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;p&#39;</span>,resultAA.pvalue)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>p 0.9601191580301243
+        <div class="output stream stdout">
+            <pre><code>p 0.9601191580301243
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="52">
-<div class="sourceCode" id="cb53"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>event_name<span class="op">=</span><span class="st">&quot;MainScreenAppear&quot;</span></span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="52">
+        <div class="sourceCode" id="cb53"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>event_name<span class="op">=</span><span class="st">&quot;MainScreenAppear&quot;</span></span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>alpha <span class="op">=</span> <span class="fl">0.1</span></span>
 <span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> analisis(df, event_name):</span>
 <span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>    evento <span class="op">=</span> df[df[<span class="st">&#39;event&#39;</span>]<span class="op">==</span>event_name]</span>
@@ -820,8 +1019,8 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb53-1"><a h
 <span id="cb53-37"><a href="#cb53-37" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-38"><a href="#cb53-38" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb53-39"><a href="#cb53-39" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p_values)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>p-value:  0.9376996189257114
+        <div class="output stream stdout">
+            <pre><code>p-value:  0.9376996189257114
 No se pudo rechazar la hipótesis nula: no hay razón para pensar que las proporciones son diferentes
 p-value:  0.7570597232046099
 No se pudo rechazar la hipótesis nula: no hay razón para pensar que las proporciones son diferentes
@@ -833,11 +1032,10 @@ p-value:  0.11456679313141849
 No se pudo rechazar la hipótesis nula: no hay razón para pensar que las proporciones son diferentes
 {&#39;Tutorial&#39;: 0.9376996189257114, &#39;MainScreenAppear&#39;: 0.7570597232046099, &#39;OffersScreenAppear&#39;: 0.2480954578522181, &#39;CartScreenAppear&#39;: 0.22883372237997213, &#39;PaymentScreenSuccessful&#39;: 0.11456679313141849}
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="56">
-<div class="sourceCode" id="cb55"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> analisis2(df, event_name):</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="56">
+        <div class="sourceCode" id="cb55"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> analisis2(df, event_name):</span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>    evento <span class="op">=</span> df[df[<span class="st">&#39;event&#39;</span>]<span class="op">==</span>event_name]</span>
 <span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>    cant_usuarios_246 <span class="op">=</span> evento[evento[<span class="st">&#39;expid&#39;</span>]<span class="op">==</span><span class="dv">246</span>][<span class="st">&#39;device&#39;</span>].nunique()</span>
@@ -874,8 +1072,8 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb55-1"><a h
 <span id="cb55-35"><a href="#cb55-35" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb55-36"><a href="#cb55-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb55-37"><a href="#cb55-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p_values2)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>p-value:  0.8264294010087645
+        <div class="output stream stdout">
+            <pre><code>p-value:  0.8264294010087645
 No se pudo rechazar la hipótesis nula: no hay razón para pensar que las proporciones son diferentes
 p-value:  0.2949721933554552
 No se pudo rechazar la hipótesis nula: no hay razón para pensar que las proporciones son diferentes
@@ -887,11 +1085,10 @@ p-value:  0.2122553275697796
 No se pudo rechazar la hipótesis nula: no hay razón para pensar que las proporciones son diferentes
 {&#39;Tutorial&#39;: 0.8264294010087645, &#39;MainScreenAppear&#39;: 0.2949721933554552, &#39;OffersScreenAppear&#39;: 0.20836205402738917, &#39;CartScreenAppear&#39;: 0.07842923237520116, &#39;PaymentScreenSuccessful&#39;: 0.2122553275697796}
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="57">
-<div class="sourceCode" id="cb57"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> analisis3(df, event_name):</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="57">
+        <div class="sourceCode" id="cb57"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> analisis3(df, event_name):</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>    evento <span class="op">=</span> df[df[<span class="st">&#39;event&#39;</span>]<span class="op">==</span>event_name]</span>
 <span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a>    cant_usuarios_247 <span class="op">=</span> evento[evento[<span class="st">&#39;expid&#39;</span>]<span class="op">==</span><span class="dv">247</span>][<span class="st">&#39;device&#39;</span>].nunique()</span>
@@ -928,8 +1125,8 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb57-1"><a h
 <span id="cb57-35"><a href="#cb57-35" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb57-36"><a href="#cb57-36" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb57-37"><a href="#cb57-37" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(p_values3)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>p-value:  0.765323922474501
+        <div class="output stream stdout">
+            <pre><code>p-value:  0.765323922474501
 No se pudo rechazar la hipótesis nula: no hay razón para pensar que las proporciones son diferentes
 p-value:  0.4587053616621515
 No se pudo rechazar la hipótesis nula: no hay razón para pensar que las proporciones son diferentes
@@ -941,37 +1138,30 @@ p-value:  0.7373415053803964
 No se pudo rechazar la hipótesis nula: no hay razón para pensar que las proporciones son diferentes
 {&#39;Tutorial&#39;: 0.765323922474501, &#39;MainScreenAppear&#39;: 0.4587053616621515, &#39;OffersScreenAppear&#39;: 0.9197817830592261, &#39;CartScreenAppear&#39;: 0.5786197879539783, &#39;PaymentScreenSuccessful&#39;: 0.7373415053803964}
 </code></pre>
-</div>
-</div>
-<div class="cell code" data-execution_count="59">
-<div class="sourceCode" id="cb59"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;muestras 246 y 247&#39;</span>,p_values)</span>
+        </div>
+    </div>
+    <div class="cell code" data-execution_count="59">
+        <div class="sourceCode" id="cb59"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;muestras 246 y 247&#39;</span>,p_values)</span>
 <span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
 <span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;muestras 246 y 248&#39;</span>,p_values2)</span>
 <span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>()</span>
 <span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;muestras 247 y 248&#39;</span>,p_values3)</span></code></pre></div>
-<div class="output stream stdout">
-<pre><code>muestras 246 y 247 {&#39;Tutorial&#39;: 0.765323922474501, &#39;MainScreenAppear&#39;: 0.4587053616621515, &#39;OffersScreenAppear&#39;: 0.9197817830592261, &#39;CartScreenAppear&#39;: 0.5786197879539783, &#39;PaymentScreenSuccessful&#39;: 0.7373415053803964}
+        <div class="output stream stdout">
+            <pre><code>muestras 246 y 247 {&#39;Tutorial&#39;: 0.765323922474501, &#39;MainScreenAppear&#39;: 0.4587053616621515, &#39;OffersScreenAppear&#39;: 0.9197817830592261, &#39;CartScreenAppear&#39;: 0.5786197879539783, &#39;PaymentScreenSuccessful&#39;: 0.7373415053803964}
 
 muestras 246 y 248 {&#39;Tutorial&#39;: 0.8264294010087645, &#39;MainScreenAppear&#39;: 0.2949721933554552, &#39;OffersScreenAppear&#39;: 0.20836205402738917, &#39;CartScreenAppear&#39;: 0.07842923237520116, &#39;PaymentScreenSuccessful&#39;: 0.2122553275697796}
 
 muestras 247 y 248 {&#39;Tutorial&#39;: 0.765323922474501, &#39;MainScreenAppear&#39;: 0.4587053616621515, &#39;OffersScreenAppear&#39;: 0.9197817830592261, &#39;CartScreenAppear&#39;: 0.5786197879539783, &#39;PaymentScreenSuccessful&#39;: 0.7373415053803964}
 </code></pre>
-</div>
-</div>
-<div class="cell markdown">
-<p>-No se puede decir que exista una diferencia estadistica de los
-grupos de control</p>
-<p>-Las funciones realizan una evaluacion por evento entre 2 muestras
-viendo las proporciones de estas como se puede ver en los experimentos
-en todo los eventos de los grupos aunque la significancia este en 0.1 o
-0.05 no se tiene razon para decir las proporciones entre los eventos de
-los grupos es diferente</p>
-<p>-Segun los datos el experimento aunque tuviera una corta duracion se
-tuvo una proporcion casi igual en los diferentes grupos</p>
-<p>-Por otro lado los cambios realizados para el experimento parecen no
-afectar el comportamiento del usuario por lo que se recomienda buscar
-uno con mayor impacto para realizar ventas.</p>
-</div>
+        </div>
+    </div>
+    <div class="cell markdown">
+        <p>-No se puede decir que exista una diferencia estadistica de los grupos de control</p>
+        <p>-Las funciones realizan una evaluacion por evento entre 2 muestras viendo las proporciones de estas como se puede ver en los experimentos en todo los eventos de los grupos aunque la significancia este en 0.1 o 0.05 no se tiene razon para decir
+            las proporciones entre los eventos de los grupos es diferente</p>
+        <p>-Segun los datos el experimento aunque tuviera una corta duracion se tuvo una proporcion casi igual en los diferentes grupos</p>
+        <p>-Por otro lado los cambios realizados para el experimento parecen no afectar el comportamiento del usuario por lo que se recomienda buscar uno con mayor impacto para realizar ventas.</p>
+    </div>
 </body>
+
 </html>
