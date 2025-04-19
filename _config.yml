@@ -1,4 +1,3 @@
 remote_theme: pages-themes/minimal@v0.2.0
-avatar: /assets/image/Imagen lk.jpg
 plugins:
 - jekyll-remote-theme
