@@ -3,3 +3,7 @@ logo: /assets/image/Imagen lk-modified.png
 description: Ingeniero en informática | Analista de datos
 plugins:
 - jekyll-remote-theme
+
+github:
+  is_project_page: false
+
