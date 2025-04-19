@@ -1,4 +1,7 @@
 # Data Analyst
+<p align="center">
+  <img src="/assets/image/Imagen lk.jpg" width="150" style="border-radius: 50%;" alt="Foto de perfil">
+</p>
 
 
 ### Perfil
